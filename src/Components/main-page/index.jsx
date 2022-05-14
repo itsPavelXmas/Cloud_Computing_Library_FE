@@ -88,7 +88,7 @@ function MainPage(props) {
             }
             <div className="grid grid-cols-1">
                 <div className="main-page">
-                    <h1 className='mt-10 text-blue-500 text-3xl font-bold'>Main Page</h1>
+                    <h1 className='mt-10 text-blue-500 text-3xl font-bold'>Library With Friends!</h1>
                     <div className="small-line"></div>
                 </div>
                 <div className="grid grid-cols-1">
