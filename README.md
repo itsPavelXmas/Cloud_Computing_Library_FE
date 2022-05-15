@@ -15,6 +15,7 @@ Serviciile folosite in Cloud prezente in acest proiect sunt Google Translate API
 
 API
 Text-to-Speech API de la Google este ideal pentru orice aplicație care redă sunetul vorbirii umane către utilizatori. Acesta permite să convertim șiruri, cuvinte și propoziții arbitrare în sunetul unei persoane care vorbește aceleași lucruri. Aplicația poate efectua o acțiune și apoi poate oferi utilizatorului vorbire umană ca feedback. Din acest motiv am ales ca pentru descrierea unei carti sa poata fi citita de un “asistent”. 
+Google Translate API de la Google pentru a putea traduce mail ul intr-o limba anume ce va fi trimis unui utilizator fiind folosit impreuna cu SMPT-ul de la SendGrid
 
 Flux de date
 
