@@ -14,7 +14,7 @@ export const getBooks = async () => {
 
 export const getBookDescription = async (id) => {
     try {
-        const resp = await fetch(`https://still-refuge-30033.herokuapp.com/${id}`);
+        const resp = await fetch(`https://still-refuge-30033.herokuapp.com/book-with-details/${id}`);
         if (resp.status === 200) {
             const data = await resp.json();
             return data.description
