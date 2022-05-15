@@ -1,6 +1,6 @@
 export const getBooks = async () => {
     try {
-        const resp = await fetch(`${process.env.REACT_APP_API_URL}/books`);
+        const resp = await fetch('https://still-refuge-30033.herokuapp.com/books');
         if (resp.status === 200) {
             const data = await resp.json();
             return data.Books
@@ -14,7 +14,7 @@ export const getBooks = async () => {
 
 export const getBookDescription = async (id) => {
     try {
-        const resp = await fetch(`${process.env.REACT_APP_API_URL}/${id}`);
+        const resp = await fetch(`https://still-refuge-30033.herokuapp.com/${id}`);
         if (resp.status === 200) {
             const data = await resp.json();
             return data.description
@@ -28,7 +28,7 @@ export const getBookDescription = async (id) => {
 
 export const getAudioData = async (id) => {
     try {
-        const resp = await fetch(`${process.env.REACT_APP_API_URL}/${id}`);
+        const resp = await fetch(`https://still-refuge-30033.herokuapp.com/read-description/${id}`);
         if (resp.status === 200) {
             console.log(resp.body)
             return resp.blob();
@@ -42,7 +42,7 @@ export const getAudioData = async (id) => {
 
 export const getTranslatedText = async (text, language) => {
     try {
-        const resp = await fetch(`${process.env.REACT_APP_API_URL}/translate`, {
+        const resp = await fetch("https://still-refuge-30033.herokuapp.com/translate", {
             method: 'POST', 
             mode: 'cors', 
             cache: 'no-cache',
@@ -67,7 +67,7 @@ export const getTranslatedText = async (text, language) => {
 
 export const sendBookToMail = async (reciever, message) => {
     try {
-        const resp = await fetch(`${process.env.REACT_APP_API_URL}/send-mail`, {
+        const resp = await fetch("https://still-refuge-30033.herokuapp.com/send-mail", {
             method: 'POST', 
             mode: 'cors', 
             cache: 'no-cache',
