@@ -2,6 +2,10 @@
   "name": "cloud_computing_library_fe",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.14.16",
+    "node": "14.19.1"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
